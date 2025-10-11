@@ -1,0 +1,76 @@
+/* EditarUsuarioExpediente.css */
+.editar-expediente-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  font-family: "Michroma", sans-serif;
+  margin-bottom: 20px;
+}
+
+.editar-expediente-title {
+  margin-bottom: 20px;
+}
+
+.editar-expediente-form {
+  background-color: #000; /* fondo negro */
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid #b8e90a; /* borde amarillo */
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.editar-expediente-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.editar-expediente-label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  color: yellow;
+}
+
+.editar-expediente-input,
+.editar-expediente-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid yellow;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  color: yellow;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.editar-expediente-input:focus,
+.editar-expediente-select:focus {
+  outline: none;
+  border-color: #fff;
+  box-shadow: 0 0 8px yellow;
+}
+
+.editar-expediente-button {
+  width: 100% !important;
+  padding: 14px !important;
+  background-color: yellow !important;
+  color: #000 !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  border: none !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+}
+
+.editar-expediente-button:hover {
+  background-color: rgb(216, 216, 35) !important;
+  box-shadow: 0 0 10px yellow !important;
+}

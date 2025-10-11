@@ -1,0 +1,113 @@
+.exp-table-container-re {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  min-height: 100%;
+  font-family: "Michroma", sans-serif;
+  color: #333;
+  max-width: 1200px;
+  margin: 30px auto;
+  background-color: transparent; /* quitamos el blanco */
+  border-radius: 0; /* quitamos bordes redondeados */
+  box-shadow: none; /* quitamos la sombra */
+}
+
+.exp-table-container-re h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+}
+
+.exp-table-re {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffa500;
+  border: 1px solid #ffa500;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
+  overflow: hidden;
+}
+
+.exp-table-re th {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 2px solid #ffa500;
+  background-color: #f2f2f2;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+.exp-table-re td {
+  padding: 10px 12px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #222;
+  border-bottom: 1px solid #ffa500;
+  text-align: start;
+  background-color: #fff;
+}
+
+.exp-table-re tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+.exp-table-re tr:hover td {
+  background-color: #ffe0b2;
+  cursor: pointer;
+}
+
+.exp-table-re tbody tr.recent {
+  background-color: #ffd699; /* resaltado especial para reingresos recientes */
+  font-weight: 600;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ffa500;
+  font-size: 18px;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.icon-btn:hover {
+  color: #e69500;
+  transform: scale(1.2);
+}
+
+tbody {
+  text-transform: capitalize;
+}
+
+p {
+  text-align: center;
+  color: #555;
+  font-size: 16px;
+}
+
+.search-bar {
+  position: relative; /* para que el icono se posicione dentro */
+  max-width: 350px;
+  margin-bottom: 15px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 6px 35px 6px 10px; /* espacio a la derecha para el icono */
+  border: 1px solid #ccc;
+  border-radius: 25px;
+}
+
+.search-bar .search-icon {
+  position: absolute;
+  right: 10px; /* dentro del input, a la derecha */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+  pointer-events: none; /* para que no interfiera al escribir */
+}
+

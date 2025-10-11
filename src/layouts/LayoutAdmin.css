@@ -1,0 +1,26 @@
+/* contenedor horizontal: sidebar + panel */
+.layout {
+  display: flex;      /* flex horizontal */
+  height: 100vh;      /* toda la altura de la pantalla */
+}
+
+/* panel principal: header arriba + main */
+.panel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;           /* ocupa todo el espacio restante junto al sidebar */
+}
+
+/* main ocupa todo el espacio restante debajo del header */
+.main-content {
+  flex: 1;
+  background-color: #f3f3f3;
+  padding: 20px;
+  overflow: auto;    /* scroll si el contenido es grande */
+}
+
+/* opcional: para asegurarte de que el header no se encima */
+.header {
+  height: 80px;
+  flex-shrink: 0;    /* no se reduce */
+}

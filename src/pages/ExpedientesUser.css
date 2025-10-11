@@ -1,0 +1,102 @@
+.form-user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* arriba, no centrado */
+  min-height: 100%;
+  
+  /* background-color: #d4d4d4; */
+
+  color: black;
+  font-family: "Michroma", sans-serif;
+  /* padding: 20px 0; */
+  /* padding-bottom: 80px; */
+}
+
+.form-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  background-color: #000; /* caja negra */
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid #ffa500;
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.3);
+  width: 100%;
+  max-width: 700px; /* ancho del formulario */
+}
+
+.exp-user-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.exp-user-input-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffa500;
+}
+
+.exp-user-input-group input,
+.exp-user-input-group select,
+.exp-user-input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ffa500;
+  border-radius: 8px;
+  background-color: #d4d4d4; /* 🔹 Cambiar de #1a1a1a a blanco */
+  color: #000; /* 🔹 Cambiar de #fff a negro */
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.exp-user-input-group input:focus,
+.exp-user-input-group select:focus,
+.exp-user-input-group textarea:focus {
+  outline: none;
+  border-color: #fff;
+  box-shadow: 0 0 8px #ffa500;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Checkbox personalizado */
+.exp-user-input-group input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+  accent-color: #ffa500; /* color de la marca del checkbox */
+  cursor: pointer;
+}
+
+.exp-user-input-group label input[type="checkbox"] {
+  vertical-align: middle;
+}
+
+/* Botón submit */
+button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background-color: #ffa500;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffb733;
+  box-shadow: 0 0 10px #ffa500;
+}

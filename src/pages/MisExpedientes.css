@@ -1,0 +1,124 @@
+.exp-table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  min-height: 100%;
+  font-family: "Michroma", sans-serif;
+  color: #333; /* texto principal oscuro */
+}
+
+.exp-table-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #222; /* más oscuro que gris */
+}
+
+.exp-table {
+  width: 100%;
+  max-width: 1200px;
+  border-collapse: collapse;
+  background-color: #ffa500;
+  border: 1px solid #ffa500;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
+  overflow: hidden;
+}
+
+.exp-table th {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 2px solid #ffa500;
+  background-color: #f2f2f2; /* naranja muy clarito */
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+.exp-table td {
+  padding: 10px 12px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #222; /* texto oscuro */
+  border-bottom: 1px solid #ffa500;
+  text-align: start;
+  background-color: #fff; /* fondo blanco por defecto */
+}
+
+.exp-table tr:nth-child(even) td {
+  background-color: #f2f2f2; /* gris clarito en pares */
+}
+
+.exp-table tr:hover td {
+  background-color: #ffe0b2; /* resaltado suave naranja claro */
+  cursor: pointer;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ffa500; /* ícono naranja */
+  font-size: 18px;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.icon-btn:hover {
+  color: #e69500; /* naranja más oscuro */
+  transform: scale(1.2);
+}
+
+tbody {
+  text-transform: capitalize;
+}
+
+
+.search-bar {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.search-bar input {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.expediente-clickable {
+  cursor: pointer;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.expediente-clickable:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.pagination {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  border: none;
+  background: #ffa500;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

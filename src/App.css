@@ -1,0 +1,34 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0px;
+  /* background-color: white; */
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  overflow-y: auto;
+  font-family: "Michroma", sans-serif;
+  font-size: 10px;
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+  color: black;
+}

@@ -1,0 +1,42 @@
+.inicio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* pantalla completa */
+  font-family: "Michroma", sans-serif;
+  color: #FFA500;
+  text-align: center;
+  background: linear-gradient(135deg, #1a1a1a, #000); /* degradado en vez de color plano */
+}
+
+.inicio-container h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.inicio-container p {
+  font-size: 20px;
+  color: #ddd;
+  margin-bottom: 50px;
+}
+
+/* Botón de inicio de sesión */
+.inicio-btn {
+  text-decoration: none;
+  color: #FFA500;
+  background-color: #000;
+  padding: 14px 36px;
+  border-radius: 10px;
+  border: 2px solid #FFA500;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.inicio-btn:hover {
+  background-color: #FFA500;
+  color: #000;
+  box-shadow: 0 0 20px #FFA500;
+  transform: scale(1.05);
+}

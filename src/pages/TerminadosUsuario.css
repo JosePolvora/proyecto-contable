@@ -1,0 +1,78 @@
+/* Contenedor general */
+.estadisticas-container-terminados {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #0f1a0f; /* verde oscuro elegante */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 255, 127, 0.3); /* sombra verde brillante */
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Título */
+.estadisticas-container-terminados h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: #00ff7f; /* verde brillante */
+}
+
+/* Tabla */
+.estadisticas-table-terminados {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+.estadisticas-table-terminados th,
+.estadisticas-table-terminados td {
+  padding: 12px 20px;
+  text-align: left;
+}
+
+.estadisticas-table-terminados thead {
+  background: linear-gradient(90deg, #00ff7f, #1dd1a1); /* degradado verde */
+}
+
+.estadisticas-table-terminados th {
+  font-weight: 600;
+  color: #000; /* texto negro sobre fondo verde */
+}
+
+.estadisticas-table-terminados tbody tr {
+  border-bottom: 1px solid #333;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.estadisticas-table-terminados tbody tr:hover {
+  background: rgba(0, 255, 127, 0.1); /* hover verde suave */
+  transform: scale(1.02);
+}
+
+/* Mensaje sin datos */
+.sin-datos {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+/* Contenedor del gráfico */
+.grafico-container-terminados {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Tooltip gráfico */
+.recharts-tooltip-wrapper {
+  background-color: #1f1f1f !important;
+  border-radius: 8px !important;
+  color: #fff !important;
+}
+
+/* Ejes del gráfico */
+.recharts-cartesian-axis-tick-value {
+  fill: #ffffff !important;
+  font-weight: 500;
+}

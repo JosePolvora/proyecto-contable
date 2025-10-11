@@ -1,0 +1,48 @@
+.header {
+  height: 80px;
+  background-color: #1a1a1a;
+  color: #ffa500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* separa título y sección de usuario/logout */
+  padding: 0 20px;
+  border-bottom: 5px solid #ffa500;
+  box-sizing: border-box;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: "Michroma", sans-serif;
+  color: #ffa500;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* espacio entre nombre y botón */
+}
+
+.nombre-usuario {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.btn-logout {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #ffa500;
+  color: #1a1a1a;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-logout:hover {
+  background-color: #e69500;
+}

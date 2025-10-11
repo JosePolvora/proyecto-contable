@@ -1,0 +1,107 @@
+/* HistorialExpedientes.css */
+
+.historial-container {
+  padding: 20px;
+  background-color: #ffffff; /* fondo blanco */
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #333; /* texto oscuro */
+}
+
+.historial-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.historial-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.historial-table th,
+.historial-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.historial-table th {
+  background-color: #ffa500; /* naranja */
+  color: #333;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.historial-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* gris muy claro para alternar filas */
+}
+
+.historial-table tr:hover {
+  background-color: #fff3e0; /* naranja muy suave en hover */
+  transition: background-color 0.3s ease;
+}
+
+.historial-table td {
+  vertical-align: middle;
+}
+
+.busqueda-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.busqueda-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.paginacion {
+  display: flex;
+  justify-content: center; /* centra todo en el medio */
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px; /* espacio entre botones y texto */
+}
+
+.paginacion-btn {
+  background-color: #ffa500; /* naranja */
+  color: #fff; /* ícono blanco */
+  border: none;
+  width: 40px; /* ancho del círculo */
+  height: 40px; /* alto del círculo */
+  border-radius: 50%; /* círculo */
+  cursor: pointer;
+  font-size: 18px; /* tamaño del ícono */
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* elimina padding extra */
+}
+
+.paginacion-btn:hover {
+  background-color: #e69500; /* naranja más oscuro en hover */
+}
+
+.paginacion-btn:disabled {
+  background-color: #ffa500; /* mantiene naranja aunque esté deshabilitado */
+  color: #fff; /* ícono blanco */
+  opacity: 0.6; /* indica deshabilitado sin volverse gris */
+  cursor: not-allowed;
+}
+
+.paginacion span {
+  font-weight: bold;
+  color: #333;
+}
