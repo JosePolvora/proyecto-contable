@@ -6,7 +6,7 @@ import PrivateRoute from "./componentes/PrivateRoute";
 // Páginas
 import Expedientes from "./pages/Expedientes";
 import Inicio from "./pages/Inicio";
-import Login from "./pages/login";
+import Login from "./pages/Login";
 import ExpedientesUser from "./pages/ExpedientesUser";
 import MisExpedientes from "./pages/MisExpedientes";
 import HistorialExpedientes from "./pages/HistorialExpedientes";
