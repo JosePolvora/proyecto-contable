@@ -5,7 +5,6 @@ import PrivateRoute from "./componentes/PrivateRoute";
 
 // Páginas
 import Expedientes from "./pages/Expedientes";
-import Usuarios from "./pages/Usuarios";
 import Inicio from "./pages/Inicio";
 import Login from "./pages/login";
 import ExpedientesUser from "./pages/ExpedientesUser";
@@ -29,7 +28,7 @@ const App = () => {
       <Route element={<PrivateRoute allowedRoles={["admin"]} />}>
         <Route path="/admin" element={<LayoutAdmin />}>
           <Route path="expedientes" element={<Expedientes />} />
-          <Route path="usuarios" element={<Usuarios />} />
+
           <Route
             path="expedientes/historial"
             element={<HistorialExpedientes />}
@@ -64,10 +63,8 @@ const App = () => {
           <Route path="expedientes/asignados" element={<MisExpedientes />} />
           <Route path="expedientes/reingresos" element={<Reingresos />} />
           <Route path="expedientes/:id" element={<ExpedientesUser />} />
-          
+
           <Route path="expedientes/usuario" element={<UsuarioExpedientes />} />
-
-
         </Route>
       </Route>
     </Routes>
