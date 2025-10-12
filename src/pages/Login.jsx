@@ -7,7 +7,7 @@ import "./Login.css";
 const Login = () => {
   const [usuario, setUsuario] = useState("");
   const [clave, setClave] = useState("");
-  const [showPassword, setShowPassword] = useState(false); // 🔹 estado para mostrar/ocultar contraseña
+  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
@@ -24,12 +24,22 @@ const Login = () => {
       return;
     }
 
+    // try {
+    //   const response = await fetch("http://localhost:3000/api/usuarios/login", {
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify({ usuario, clave }),
+    //   });
+
     try {
-      const response = await fetch("http://localhost:3000/api/usuarios/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ usuario, clave }),
-      });
+      const response = await fetch(
+        "https://proyecto-contable-back.onrender.com/api/usuarios/login",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ usuario, clave }),
+        }
+      );
 
       const data = await response.json();
 
