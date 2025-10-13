@@ -410,7 +410,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { FaArrowLeft, FaArrowRight, FaEdit } from "react-icons/fa";
-import { useNavigate } from "react-router-dom"; // 🔹 Importamos useNavigate
+import { useNavigate } from "react-router-dom";
 import "./HistorialExpedientes.css";
 import Swal from "sweetalert2";
 
@@ -421,7 +421,7 @@ const HistorialExpedientes = () => {
   const [paginaActual, setPaginaActual] = useState(1);
   const itemsPorPagina = 5;
 
-  const navigate = useNavigate(); // 🔹 Hook de navegación
+  const navigate = useNavigate();
 
   // 🔹 Resetear a página 1 cuando cambian las búsquedas
   useEffect(() => {
@@ -430,7 +430,8 @@ const HistorialExpedientes = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/expedientes/historial")
+      //.get("http://localhost:3000/api/expedientes/historial")
+      .get("https://proyecto-contable-back.onrender.com/api/expedientes/historial")
       .then((res) => {
         if (res.data.ok) {
           setExpedientes(res.data.body || []);
