@@ -17,7 +17,7 @@ const PendientesEstadisticas = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/expedientes/historial")
+      .get("https://santaisabel2.online/api/expedientes/historial")
       .then((res) => {
         if (res.data.ok) {
           const expedientes = res.data.body || [];

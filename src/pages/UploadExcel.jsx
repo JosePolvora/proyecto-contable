@@ -26,8 +26,7 @@ const UploadExcel = () => {
     try {
       setLoading(true);
       const response = await axios.post(
-        //"http://localhost:3000/api/expedientes/upload-excel",
-        "https://proyecto-contable-back.onrender.com/api/expedientes/upload-excel",
+        "https://santaisabel2.online/api/expedientes/upload-excel",
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );

@@ -22,7 +22,7 @@ const UsuarioExpedientes = () => {
     if (!usuarioId) return;
 
     axios
-      .get(`http://localhost:3000/api/expedientes/usuario/${usuarioId}`)
+      .get(`https://santaisabel2.online/api/expedientes/usuario/${usuarioId}`)
       .then((res) => {
         if (res.data.ok && Array.isArray(res.data.body)) {
           // 🔹 Ordenamos por fecha del último movimiento (updatedAt)

@@ -32,7 +32,7 @@ const FormSeguimiento = () => {
   // 🔹 Cargar datos del expediente al montar el componente
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/api/expedientes/${id}`)
+      .get(`https://santaisabel2.online/api/expedientes/${id}`)
       .then((res) => {
         const data = res.data.body;
         if (!data) {
@@ -84,7 +84,7 @@ const FormSeguimiento = () => {
 
     try {
       await axios.put(
-        `http://localhost:3000/api/expedientes/${id}`,
+        `https://santaisabel2.online/api/expedientes/${id}`,
         actualizado
       );
 

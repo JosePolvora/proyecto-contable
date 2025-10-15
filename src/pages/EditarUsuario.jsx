@@ -15,7 +15,7 @@ const EditarUsuario = () => {
   // 📌 Cargar expediente actual
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/api/expedientes/${id}`)
+      .get(`https://santaisabel2.online/api/expedientes/${id}`)
       .then((res) => {
         if (res.data.ok && res.data.body) {
           const exp = res.data.body;
@@ -36,7 +36,7 @@ const EditarUsuario = () => {
   // 📌 Cargar usuarios
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/usuarios")
+      .get("https://santaisabel2.online/api/usuarios")
       .then((res) => {
         if (res.data.ok) {
           setUsuarios(res.data.body);
@@ -57,7 +57,7 @@ const EditarUsuario = () => {
     }
 
     try {
-      await axios.put(`http://localhost:3000/api/expedientes/${expediente.expediente_id}`, {
+      await axios.put(`https://santaisabel2.online/api/expedientes/${expediente.expediente_id}`, {
         usuario_id: usuarioSeleccionado,
       });
 
