@@ -1,13 +1,17 @@
-.inicio-container {
+/* .inicio-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* pantalla completa */
+  height: 100vh;
   font-family: "Michroma", sans-serif;
-  color: #FFA500;
+  color: #ffa500;
   text-align: center;
-  background: linear-gradient(135deg, #1a1a1a, #000); /* degradado en vez de color plano */
+  background: linear-gradient(
+    135deg,
+    #1a1a1a,
+    #000
+  );
 }
 
 .inicio-container h1 {
@@ -21,7 +25,49 @@
   margin-bottom: 50px;
 }
 
-/* Botón de inicio de sesión */
+.inicio-btn {
+  text-decoration: none;
+  color: #ffa500;
+  background-color: #000;
+  padding: 14px 36px;
+  border-radius: 10px;
+  border: 2px solid #ffa500;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.inicio-btn:hover {
+  background-color: #ffa500;
+  color: #000;
+  box-shadow: 0 0 20px #ffa500;
+  transform: scale(1.05);
+} */
+
+/* ===== Estilos base (los que ya tienes) ===== */
+.inicio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Michroma", sans-serif;
+  color: #FFA500;
+  text-align: center;
+  background: linear-gradient(135deg, #1a1a1a, #000);
+}
+
+.inicio-container h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.inicio-container p {
+  font-size: 20px;
+  color: #ddd;
+  margin-bottom: 50px;
+}
+
 .inicio-btn {
   text-decoration: none;
   color: #FFA500;
@@ -39,4 +85,58 @@
   color: #000;
   box-shadow: 0 0 20px #FFA500;
   transform: scale(1.05);
+}
+
+/* ===== Media Queries para Responsividad ===== */
+
+/* Tablets: pantallas hasta 1024px */
+@media (max-width: 1024px) {
+  .inicio-container h1 {
+    font-size: 40px;
+  }
+
+  .inicio-container p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .inicio-btn {
+    padding: 12px 30px;
+    font-size: 18px;
+  }
+}
+
+/* Móviles: pantallas hasta 768px */
+@media (max-width: 768px) {
+  .inicio-container h1 {
+    font-size: 32px;
+  }
+
+  .inicio-container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding: 0 20px; /* para que no toque los bordes */
+  }
+
+  .inicio-btn {
+    padding: 10px 24px;
+    font-size: 16px;
+  }
+}
+
+/* Pantallas muy pequeñas: hasta 480px */
+@media (max-width: 480px) {
+  .inicio-container h1 {
+    font-size: 28px;
+  }
+
+  .inicio-container p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .inicio-btn {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
 }
