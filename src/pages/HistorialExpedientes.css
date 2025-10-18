@@ -1,11 +1,9 @@
-/* HistorialExpedientes.css */
-
 .historial-container {
   padding: 20px;
-  background-color: #ffffff; /* fondo blanco */
+  background-color: #ffffff;
   min-height: 100vh;
   font-family: Arial, sans-serif;
-  color: #333; /* texto oscuro */
+  color: #333;
 }
 
 .historial-container h2 {
@@ -31,7 +29,7 @@
 }
 
 .historial-table th {
-  background-color: #ffa500; /* naranja */
+  background-color: #ffa500;
   color: #333;
   text-align: center;
   position: sticky;
@@ -40,11 +38,11 @@
 }
 
 .historial-table tr:nth-child(even) {
-  background-color: #f9f9f9; /* gris muy claro para alternar filas */
+  background-color: #f9f9f9;
 }
 
 .historial-table tr:hover {
-  background-color: #fff3e0; /* naranja muy suave en hover */
+  background-color: #fff3e0;
   transition: background-color 0.3s ease;
 }
 
@@ -68,36 +66,36 @@
 
 .paginacion {
   display: flex;
-  justify-content: center; /* centra todo en el medio */
+  justify-content: center;
   align-items: center;
   margin-top: 20px;
-  gap: 15px; /* espacio entre botones y texto */
+  gap: 15px;
 }
 
 .paginacion-btn {
-  background-color: #ffa500; /* naranja */
-  color: #fff; /* ícono blanco */
+  background-color: #ffa500;
+  color: #fff;
   border: none;
-  width: 40px; /* ancho del círculo */
-  height: 40px; /* alto del círculo */
-  border-radius: 50%; /* círculo */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   cursor: pointer;
-  font-size: 18px; /* tamaño del ícono */
+  font-size: 18px;
   transition: background-color 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0; /* elimina padding extra */
+  padding: 0;
 }
 
 .paginacion-btn:hover {
-  background-color: #e69500; /* naranja más oscuro en hover */
+  background-color: #e69500;
 }
 
 .paginacion-btn:disabled {
-  background-color: #ffa500; /* mantiene naranja aunque esté deshabilitado */
-  color: #fff; /* ícono blanco */
-  opacity: 0.6; /* indica deshabilitado sin volverse gris */
+  background-color: #ffa500;
+  color: #fff;
+  opacity: 0.6;
   cursor: not-allowed;
 }
 

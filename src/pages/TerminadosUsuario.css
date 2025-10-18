@@ -1,11 +1,14 @@
 /* Contenedor general */
+
 .estadisticas-container-terminados {
   max-width: 900px;
   margin: 40px auto;
   padding: 20px;
-  background: #0f1a0f; /* verde oscuro elegante */
+  /* background: #0f1a0f; */
+  background: #121212; /* fondo gris oscuro */
   border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 255, 127, 0.3); /* sombra verde brillante */
+  /* box-shadow: 0 8px 20px rgba(0, 255, 127, 0.3); */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
 }
@@ -37,7 +40,7 @@
 
 .estadisticas-table-terminados th {
   font-weight: 600;
-  color: #000; /* texto negro sobre fondo verde */
+  color: #121212;
 }
 
 .estadisticas-table-terminados tbody tr {

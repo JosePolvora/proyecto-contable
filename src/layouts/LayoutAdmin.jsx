@@ -1,7 +1,7 @@
 import Sidebar from "../componentes/sidebar/Sidebar";
 import Header from "../componentes/header/Header";
 import { Outlet } from "react-router-dom";
-import "./LayoutAdmin.css"; // asegúrate de importar el CSS
+import "./Layout.css";
 
 export default function LayoutAdmin() {
   return (

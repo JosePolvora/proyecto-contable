@@ -9,7 +9,7 @@ import {
   ResponsiveContainer,
   CartesianGrid,
 } from "recharts";
-import "./TerminadosUsuario.css"; // Usa el mismo estilo
+import "./TerminadosUsuario.css";
 
 const TerminadosEstadisticas = () => {
   const [resumenArray, setResumenArray] = useState([]);
@@ -47,11 +47,13 @@ const TerminadosEstadisticas = () => {
 
   if (cargando) return <p className="sin-datos">Cargando estadísticas...</p>;
   if (resumenArray.length === 0)
-    return <p className="sin-datos">No hay expedientes terminados por usuario</p>;
+    return (
+      <p className="sin-datos">No hay expedientes terminados por usuario</p>
+    );
 
   return (
     <div className="estadisticas-container-terminados">
-      <h2>Expedientes Terminados por Usuario ✅</h2>
+      <h2>Expedientes Terminados por Usuario</h2>
 
       {/* Tabla */}
       <table className="estadisticas-table-terminados">
@@ -88,7 +90,8 @@ const TerminadosEstadisticas = () => {
                 border: "none",
               }}
             />
-            <Bar dataKey="cantidad" fill="#00ff7f" radius={[10, 10, 0, 0]} /> {/* Verde para terminados */}
+            <Bar dataKey="cantidad" fill="#00ff7f" radius={[10, 10, 0, 0]} />{" "}
+            {/* Verde para terminados */}
           </BarChart>
         </ResponsiveContainer>
       </div>

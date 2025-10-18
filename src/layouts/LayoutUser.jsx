@@ -1,7 +1,7 @@
 import SidebarUser from "../componentes/sidebar/SidebarUser";
 import Header from "../componentes/header/Header";
 import { Outlet } from "react-router-dom";
-import "./LayoutUser.css"; // CSS separado si querés
+import "./Layout.css";
 
 export default function LayoutUser() {
   return (

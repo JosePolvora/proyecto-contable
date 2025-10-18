@@ -31,7 +31,7 @@ const Sidebar = () => {
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             <FiUpload className="sidebar-icon" />
-            <span>Expedientes Carga Masiva</span>
+            <span>Carga Masiva</span>
           </NavLink>
         </li>
 
@@ -41,7 +41,7 @@ const Sidebar = () => {
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             <FiClock className="sidebar-icon" />
-            <span>Historial</span>
+            <span>Seguimiento</span>
           </NavLink>
         </li>
 
@@ -67,6 +67,9 @@ const Sidebar = () => {
           </NavLink>
         </li>
       </ul>
+      <p className="footer-copyright">
+        © {new Date().getFullYear()} Jose Oviedo.
+      </p>
     </aside>
   );
 };

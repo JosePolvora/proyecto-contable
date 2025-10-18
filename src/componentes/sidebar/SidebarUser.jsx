@@ -1,6 +1,6 @@
 import "./Sidebar.css";
 import { NavLink } from "react-router-dom";
-import { FaFolderOpen, FaRedo, FaChartBar } from "react-icons/fa"; // íconos más representativos
+import { FaFolderOpen, FaRedo, FaChartBar } from "react-icons/fa";
 
 const SidebarUser = () => {
   return (
@@ -35,6 +35,9 @@ const SidebarUser = () => {
           </NavLink>
         </li>
       </ul>
+      <p className="footer-copyright">
+        © {new Date().getFullYear()} Jose Oviedo.
+      </p>
     </aside>
   );
 };

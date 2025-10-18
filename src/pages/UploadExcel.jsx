@@ -50,7 +50,7 @@ const UploadExcel = () => {
   };
 
   return (
-    <div>
+    <div className="">
       <h2>Carga Masiva de Expedientes</h2>
       <div className="upload-container">
         <div className="upload-box">

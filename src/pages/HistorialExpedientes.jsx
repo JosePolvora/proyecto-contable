@@ -10,7 +10,7 @@ const HistorialExpedientes = () => {
   const [busquedaNumero, setBusquedaNumero] = useState("");
   const [busquedaNombre, setBusquedaNombre] = useState("");
   const [paginaActual, setPaginaActual] = useState(1);
-  const itemsPorPagina = 5;
+  const itemsPorPagina = 10;
 
   const navigate = useNavigate();
 
@@ -94,7 +94,7 @@ const HistorialExpedientes = () => {
 
   return (
     <div className="historial-container">
-      <h2>Historial de Expedientes</h2>
+      <h2>Seguimiento de Expedientes</h2>
 
       <div className="busqueda-container">
         <input
