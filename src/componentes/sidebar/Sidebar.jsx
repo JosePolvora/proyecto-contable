@@ -6,6 +6,7 @@ import {
   FiClock, // Historial
   FiAlertCircle, // Pendientes
   FiCheckCircle, // Terminados
+  FiFolder,
 } from "react-icons/fi";
 
 const Sidebar = () => {
@@ -64,6 +65,17 @@ const Sidebar = () => {
           >
             <FiCheckCircle className="sidebar-icon" />
             <span>Terminados</span>
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/admin/expedientes/administrador"
+            end
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            <FiFolder className="sidebar-icon" />
+            <span>Consulta General</span>
           </NavLink>
         </li>
       </ul>

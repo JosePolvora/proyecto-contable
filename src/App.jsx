@@ -17,6 +17,7 @@ import UploadExcel from "./pages/UploadExcel";
 import TerminadosEstadisticas from "./pages/TerminadosEstadisticas";
 import EditarUsuario from "./pages/EditarUsuario";
 import UsuarioExpedientes from "./pages/UsuarioExpedientes";
+import AdminExpedientes from "./pages/AdminExpedientes";
 
 const App = () => {
   return (
@@ -50,6 +51,11 @@ const App = () => {
           <Route
             path="expedientes/editar-usuario/:id"
             element={<EditarUsuario />}
+          />
+
+          <Route
+            path="expedientes/administrador"
+            element={<AdminExpedientes />}
           />
         </Route>
       </Route>
